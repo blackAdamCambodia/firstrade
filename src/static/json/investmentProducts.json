@@ -1,0 +1,16 @@
+{
+    "products":[
+        {
+            "id":1 ,
+            "imageUrl":"/images/icon-stocks.svg",
+            "title":"Stocks/ETFs",
+            "description":"Trade stocks listed on the NYSE, AMEX, Nasdaq or the Over-the-Counter (OTC) markets."
+        },
+        {
+            "id":2 ,
+            "imageUrl":"/images/icon-options.svg",
+            "title":"options",
+            "description":"Hedge your portfolio with options at $0 commission and $0 contract fees."
+        }
+]
+}
