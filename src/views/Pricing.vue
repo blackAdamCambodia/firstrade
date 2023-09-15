@@ -235,7 +235,7 @@
                                         <div class="flex flex-col gap-4">
                                             <div class="flex flex-row items-center gap-6">                                                
                                                 <div>
-                                                    <img class="w-10" src="/images/icon_help (1).svg" alt="">
+                                                    <img class="w-10" src="/images/icon_help.svg" alt="">
                                                 </div>
                                                 <a href="https://help.en-US.firstrade.com" target="_blank"
                                                     rel="noopener noreferrer"
@@ -469,7 +469,7 @@
                                         <div class="flex flex-col gap-4">
                                             <div class="flex flex-row items-center gap-6">                                                
                                                 <div>
-                                                    <img class="w-10" src="/images/icon_help (1).svg" alt="">
+                                                    <img class="w-10" src="/images/icon_help.svg" alt="">
                                                 </div>
                                                 <a href="https://help.en-US.firstrade.com" target="_blank"
                                                     rel="noopener noreferrer"
