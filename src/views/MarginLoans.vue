@@ -6,17 +6,17 @@
                 <div class="bg-[url(/images/marginloan-hero.png)] bg-cover bg-center">
                     <div class="md:flex flex-row max-w-7xl m-auto px-8">
                         <div class="w-4/5 py-24 md:w-1/2 xl:w-2/5 text-left">
-                            <h1 class=" font-bold text-4xl lg:text-5xl pt-6 pb-3 text-primary">{{ marginLoans.title }}</h1>
-                            <div class="text-xl my-4 mb-8 text-secondary">{{ marginLoans.Subtitle }}
+                            <h1 class=" font-bold text-4xl lg:text-5xl pt-6 pb-3 text-primary">{{ $t('topMenu.margin_loans') }}</h1>
+                            <div class="text-xl my-4 mb-8 text-secondary">{{ $t('margin_loan_page.get_flexible_line_of_credit_for_short_term_financing_needs') }}
                             </div>
                             <button
                                 class="bg-warning hover:bg-[#e67021] text-white text-md p-3 rounded-md !w-45 mb-3 md:!w-[185px] xl:!w-[216px]">
-                                <a href="https://signup.firstrade.com/apply/en-us">{{ marginLoans.buttonText }}</a>
+                                <a href="https://signup.firstrade.com/apply/en-us">{{ $t('hompage.open_account') }}</a>
                             </button>
                             <div class="mt-6">
                                 <a class="text-blue-500 hover:text-primary text-sm" aria-label="Upgrade an existing account"
                                     href="https://invest.firstrade.com/cgi-bin/login?ft_locale=en-us&amp;redirect=/content/myaccount/profile/margin"
-                                    rel="noopener noreferrer">Upgrade an existing account
+                                    rel="noopener noreferrer">{{ $t('margin_loan_page.upgrade_an_existing_account') }}
                                 </a>
                             </div>
                         </div>
@@ -29,18 +29,18 @@
         <section>
             <div class="container px-3 py-6  sm:max-w-none md:max-w-none lg:max-w-7xl border-b-[1px]  mx-auto">
                 <div class="py-4 center ">
-                    <h2 class="text-4xl mb-3 text-primary font-bold">{{ advantageMargin.title }}</h2>
+                    <h2 class="text-4xl mb-3 text-primary font-bold">{{ $t('margin_loan_page.the_advantages_of_margin_loans') }}</h2>
                 </div>
                 <div class="px-5 flex justify-between gap-4 text-center">
                     <div class="" v-for="marginItem in advantageMargin.marginItems" :key="marginItem.id">
                         <div class="flex flex-col items-center  p-6">
                             <img :src="marginItem.imageUrl" alt="product.title">
                             <div>
-                                <h3 class="font-bold text-2xl mt-6 text-blue-500 mb-4  ">{{ marginItem.title }}</h3>
-                                <p class="text-md text-secondary">{{ marginItem.description }}
+                                <h3 class="font-bold text-2xl mt-6 text-blue-500 mb-4  ">{{ $t(marginItem.title) }}</h3>
+                                <p class="text-md text-secondary">{{ $t(marginItem.description) }}
                                 </p>
                             </div>
-                            <a class="text-md text-blue-500 hover:text-primary" href="#">{{ marginItem.buttonText }}</a>
+                            <a class="text-md text-blue-500 hover:text-primary" href="#">{{ $t(marginItem.buttonText) }}</a>
                         </div>
                     </div>
                 </div>
@@ -54,15 +54,15 @@
                 <div class="flex justify-between gap-4 items-start">
                     <div>
                         <div class="text-left">
-                            <h2 class="text-4xl font-bold text-primary mb-6">{{ processMargin.title }}</h2>
-                            <p class=" text-md text-secondary">{{ processMargin.description }}</p>
+                            <h2 class="text-4xl font-bold text-primary mb-6">{{ $t('margin_loan_page.how_margin_loan_work') }}</h2>
+                            <p class=" text-md text-secondary">{{ $t('margin_loan_page.margin_loan_is_a_flexible_line_of_credit') }}</p>
                         </div>
 
                     </div>
                     <div>
                         <div class="bg-[#eff2f7] w-60 p-6 text-left">
-                            <h5 class="text-[#4d6582] font-bold text-xl mb-4">{{ marginGuide.title }}</h5>
-                            <p class="text-md text-secondary" v-html="marginGuide.info"></p>
+                            <h5 class="text-[#4d6582] font-bold text-xl mb-4">{{ $t('margin_loan_page.guide_to_margin') }}</h5>
+                            <p class="text-md text-secondary" v-html="$t('margin_loan_page.for_more_information_about_margin_loans')"></p>
                         </div>
                     </div>
                 </div>
@@ -70,30 +70,29 @@
                 <div class="pt-8">
                     <div class="flex justify-between gap-8 md:gap-24 text-left">
                         <div class="text-left py-8">
-                            <h4 class="text-primary text-xl mb-4">{{ processMargin.benefits.title }}</h4>
-                            <p class=" text-md text-secondary mb-6">{{ processMargin.benefits.description }}</p>
+                            <h4 class="text-primary text-xl mb-4">{{ $t('margin_loan_page.benifit') }}</h4>
+                            <p class=" text-md text-secondary mb-6">{{ $t('margin_loan_page.enjoy_these_benefits_of_margin_trading') }}</p>
                             <div class="py- text-md text-secondary">
                                 <ul class="list-disc mt-2 list-inside" v-for="item in processMargin.benefits.listItemsLeft"
                                     :key="item.id">
-                                    <li>{{ item.desc }}</li>
+                                    <li>{{ $t(item.desc )}}</li>
                                 </ul>
                             </div>
                             <div class="mt-2">
-                                <a class="text-blue-500 text-sm hover:text-primary mt-4" href="#">Learn more about
-                                    benefits</a>
+                                <a class="text-blue-500 text-sm hover:text-primary mt-4" href="#">{{ $t('button.learn_more_about_benefits') }}</a>
                             </div>
                         </div>
                         <div class="text-left py-8">
-                            <h4 class="text-primary text-xl mb-4">{{ processMargin.risk.title }}</h4>
-                            <p class=" text-md text-secondary mb-6">{{ processMargin.risk.description }}</p>
+                            <h4 class="text-primary text-xl mb-4">{{ $t('margin_loan_page.risks') }}</h4>
+                            <p class=" text-md text-secondary mb-6">{{  $t('margin_loan_page.understand_the_potential_risks') }}</p>
                             <div class=" text-md text-secondary">
                                 <ul class="list-disc mt-2 list-inside" v-for="item in processMargin.risk.listItemsRight"
                                     :key="item.id">
-                                    <li>{{ item.desc }}</li>
+                                    <li>{{ $t(item.desc ) }}</li>
                                 </ul>
                             </div>
                             <div class="mt-3">
-                                <a class="text-blue-500 text-sm hover:text-primary" href="#">Learn more about Risks</a>
+                                <a class="text-blue-500 text-sm hover:text-primary" href="#">{{ $t('button.learn_more_about_risks') }}</a>
                             </div>
                         </div>
                     </div>
@@ -105,20 +104,17 @@
         <section>
             <div class="bg-primaryLight">
                 <div class="max-w-7xl m-auto px-8 pt-16 pb-12">
-                    <h2 class="font-futura font-bold text-ft-blue mb-2 text-center">Margin Rates</h2>
-                    <div class="text-xl text-center mb-6">Firstrade's margin rates are among the lowest available in the
-                        industry.</div>
+                    <h2 class="font-sans text-2xl font-bold text-primary mb-2 text-center">{{ $t('pricing_page.margin_rates') }}</h2>
+                    <div class="text-xl text-secondary text-center mb-6">{{ $t('margin_loan_page.firstrade_margin_rates_are_among_the_lowest') }}</div>
                     <div>
                         <div class="grid-rows-8 grid grid-cols-12">
-                            <div
-                                class="text-base font-bold text-left border-b-[3px] border-solid border-grayish-blue text-secondary py-3 col-span-4">
-                                Dollar Range</div>
-                            <div
-                                class="text-base font-bold text-left border-b-[3px] border-solid border-grayish-blue text-secondary py-3 col-span-5">
-                                Above/Below Base Rate</div>
-                            <div
-                                class="text-base font-bold text-left border-b-[3px] border-solid border-grayish-blue text-secondary py-3 col-span-3">
-                                Effective Rate</div>
+                            <div class="text-base font-bold text-left border-b-[3px] border-solid border-grayish-blue text-secondary py-3 col-span-4"> {{ $t('pricing_page.dollar_range') }}</div>
+                            <div class="text-base font-bold text-left border-b-[3px] border-solid border-grayish-blue text-secondary py-3 col-span-5">
+                                {{ $t('pricing_page.below_base_rate') }}
+                            </div>
+                            <div class="text-base font-bold text-left border-b-[3px] border-solid border-grayish-blue text-secondary py-3 col-span-3">
+                                {{ $t('pricing_page.effective_rate') }}
+                            </div>
                             <div
                                 class="text-base text-left text-secondary py-3 border-b border-solid border-grayish-blue col-span-4">
                                 $1,000,000 +</div>
@@ -190,14 +186,9 @@
                                 class="text-base text-left text-secondary py-3 border-b border-solid border-grayish-blue col-span-3">
                                 13.75%</div>
                         </div>
-                        <div class="text-xs text-[#96a1b1] text-left my-4">As of <span
-                                class="text-xs text-[#96a1b1] my-4">July 28, 2023</span>, the current base rate is
-                            <span class="text-xs text-[#96a1b1] my-4">12</span>%. Subject to change without prior
-                            notice.
+                        <div class="text-xs text-[#96a1b1] text-left my-4" v-html=" $t('margin_loan_page.the_current_base_rate_is') ">
                         </div>
-                        <div class="text-xs text-[#96a1b1] my-4 text-left">When setting base rates, Firstrade considers
-                            indicators like commercially recognized interest rates, industry conditions related to credit,
-                            the availability of liquidity in the marketplace, and general market conditions.</div>
+                        <div class="text-xs text-[#96a1b1] my-4 text-left">{{ $t('margin_loan_page.when_setting_base_rates_Firstrade_considers') }}</div>
                     </div>
                 </div>
             </div>
@@ -206,7 +197,7 @@
         <!-- Get started with margin loans section start -->
         <div>
             <div class="max-w-7xl m-auto px-8 pt-16 pb-12 mb-10">
-                <h3 class="text-primary font-bold text-3xl text-ft-blue mb-12 text-center">{{ applyMargin.title }}</h3>
+                <h3 class="text-primary font-bold text-3xl text-ft-blue mb-12 text-center">{{ $t('margin_loan_page.get_started_with_margin_loans') }}</h3>
                 <div class="md:flex flex-row max-w-7xl m-auto">
                     <div class="w-full md:w-1/4 px-4 mb-6" v-for="item in applyMargin.myItems" :key="item.id">
                         <div class="text-center mb-2" >
@@ -220,14 +211,13 @@
                                 </span>                            
                             </span>
                         </div>
-                        <div class="text-center text-secondary">{{ item.title }}</div>
+                        <div class="text-center text-secondary">{{ $t(item.title) }}</div>
                     </div>
                    
                 </div>
                 <div class="mt-2 flex items-center justify-center">
                     <a  class="bg-warning hover:bg-[#e67021] text-white text-md p-3 rounded-md !w-45 mb-3 md:!w-[185px] xl:!w-[216px]"
-                        href="https://invest.firstrade.com/cgi-bin/login?ft_locale=en-us&amp;redirect=/content/myaccount/profile/margin">Apply
-                        for Margin</a>
+                        href="https://invest.firstrade.com/cgi-bin/login?ft_locale=en-us&amp;redirect=/content/myaccount/profile/margin">{{ $t('button.apply_for_margin') }}</a>
                 </div>
             </div>
         </div>
@@ -239,102 +229,88 @@
 export default {
 
     data() {
-        return {
-            marginLoans: {
-                title: "Margin Loans",
-                Subtitle: "Get a flexible line of credit for short-term financing needs with a margin loan from Firstrade.",
-                buttonText: "Open Account",
-
-
-            },
+        return {            
             advantageMargin: {
-                title: "The Advantages of Margin Loans",
                 marginItems: [
                     {
                         id: 1,
                         imageUrl: "/images/margin1.webp",
-                        title: "Increased buying power",
-                        description: "Trading on margin allows you to buy more securities than you could on a cash-only basis"
+                        title: "margin_loan_page.increased_buying_power",
+                        description: "margin_loan_page.tading_on_margin_allows_you_to_buy"
                     },
                     {
                         id: 2,
                         imageUrl: "/images/margin2.webp",
-                        title: "Flexible line of credit",
-                        description: "Borrowing on margin gives you a flexible line of credit without additional paperwork or closing fees"
+                        title: "margin_loan_page.flexible_line_of_credit",
+                        description: "margin_loan_page.borrowing_on_margin_gives_you_a_flexible"
                     },
                     {
                         id: 3,
                         imageUrl: "/images/margin3.webp",
-                        title: "Low margin rates",
-                        description: "Firstrade's margin rates are among the lowest available in the industry",
-                        buttonText: "View margin rates"
+                        title: "margin_loan_page.low_margin_rates",
+                        description: "margin_loan_page.firstrade_margin_rates_are_among_the_lowest",
+                        buttonText: "button.view_margin_rates"
                     }
                 ]
             },
-            processMargin: {
-                title: "How Margin Loans Work",
-                description: "A margin loan is a flexible line of credit that allows you to borrow against the value of securities you already own. Whether you want to increase your borrowing power to purchase more securities or looking for a source of flexible borrowing for short-term financing needs, a margin loan from Firstrade can help you gain access to funds. When used correctly, a margin loan can help you execute your investment strategies. Before you begin, it is important to understand and weigh both the benefits and risks associated with margin trading.",
+            processMargin: {                
                 benefits: {
-                    title: "Benefits",
-                    description: "Enjoy these benefits of margin trading accounts:",
                     listItemsLeft: [
                         {
                             id: 1,
-                            desc: "The ability to leverage your investments",
+                            desc: "margin_loan_page.the_ability_to_leverage_your_investment",
                         },
                         {
                             id: 2,
-                            desc: "The ability to short sell a stock and profit from price declines",
+                            desc: "margin_loan_page.the_ability_to_short_sell_a_stock",
                         },
                         {
                             id: 3,
-                            desc: "Increased returns when the value of your holdings moves in your favor",
+                            desc: "margin_loan_page.increased_returns_when_the_value",
                         },
                         {
                             id: 4,
-                            desc: "Avoid cash account violations caused by unsettled funds",
+                            desc: "margin_loan_page.void_cash_account_violations_caused",
                         },
                         {
                             id: 5,
-                            desc: "Diversify your portfolio by using margin buying power",
+                            desc: "margin_loan_page.diversify_your_portfolio_by_using",
                         },
                         {
                             id: 6,
-                            desc: "Short-term financing option without any additional paperwork or fees",
+                            desc: "margin_loan_page.short_term_financing_option_without",
                         },
                         {
                             id: 7,
-                            desc: "Interest on margin loans may be tax deductible against your net investment income (consult with your tax advisor)",
+                            desc: "margin_loan_page.interest_on_margin_loans_may_be_tax_deductible_against_your_net",
                         }
                     ],
                 },
                 risk: {
-                    title: "Risks",
-                    description: "Understand the potential risks:",
                     listItemsRight: [
                         {
                             id: 1,
-                            desc: "Potential margin calls",
+                            desc: "margin_loan_page.potential_margin_calls",
                         },
                         {
                             id: 2,
-                            desc: "Increased potential loss if your securities decline in value",
+                            desc: "margin_loan_page.increased_potential_loss_if_your_securities",
                         },
                         {
                             id: 3,
-                            desc: "Possible greater losses than your original investment",
+                            desc: "margin_loan_page.possible_greater_losses",
                         },
                         {
                             id: 4,
-                            desc: "Rise in interest rates may increase the cost of your loan",
+                            desc: "margin_loan_page.rise_in_interest_rates",
                         },
                         {
                             id: 5,
-                            desc: "The firm can force the sale of securities or other assets in your account",
+                            desc: "margin_loan_page.the_firm_can_force_the_sale",
                         },
                         {
                             id: 6,
-                            desc: "You are not entitled to choose which securities or other assets in your accounts are liquidated or sold to meet a margin call",
+                            desc: "margin_loan_page.you_are_not_entitled_to_choose_which",
                         }
                     ]
                 }
@@ -345,27 +321,26 @@ export default {
                 info: `<div>For more information about margin loans, refer to our <a class="text-blue-500 hover:text-primary" href="/resources/guides/margin">Margin Education</a> section.</div>`,
             },
             applyMargin:{
-                title:"Get started with margin loans",
                 myItems:[
                     {
                         id: 1,
                         imageUrl:"/images/margin4.webp",
-                        title:"Make sure you understand the risks and benefits of using margin"
+                        title:"margin_loan_page.make_sure_you_understand_the_risks_and_benefits"
                     },
                     {
                         id: 1,
                         imageUrl:"/images/margin5.webp",
-                        title:"Have at least $2,000 of assets in your account"
+                        title:"margin_loan_page.make_sure_you_understand_the_risks_and_benefits"
                     },
                     {
                         id: 1,
                         imageUrl:"/images/margin6.webp",
-                        title:"Complete the Margin Application & Agreement online"
+                        title:"margin_loan_page.have_at_least_2,000_of_assets"
                     },
                     {
                         id: 1,
                         imageUrl:"/images/margin7.webp",
-                        title:"Once approved, you can start enjoying the benefits and flexibility that margin offers"
+                        title:"margin_loan_page.once_approved_you_can_start_enjoying"
                     }
                 ]
             }

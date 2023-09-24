@@ -3,39 +3,39 @@
         <div class="mx-auto grid max-w-7xl grid-cols-12 gap-8 py-16 px-4">
                     <div class="col-span-12 lg:col-span-9">
                         <div class="text-left">
-                            <h2 class="text-4xl font-bold text-primary mb-6">{{ extendedHours.title }}</h2>                           
+                            <h2 class="text-4xl  font-[800] text-primary mb-6">{{ $t('hompage.extended_Hours_trading') }}</h2>                           
                         </div>
                         <div class="text-left ">
-                            <p class=" text-xl font-bold mb-2 text-secondary">{{ extendedHours.subtitle }}</p>
-                            <p class=" text-md mb-6 text-secondary">{{ extendedHours.description }}</p>
+                            <p class=" text-xl font-bold mb-2 text-secondary">{{ $t('extended_hours_page.more_opportunities_to_trade') }}</p>
+                            <p class=" text-md mb-6 text-secondary">{{ $t('extended_hours_page.we_offer_stock_market_after_hours') }}</p>
                             <div class="py-6 text-md text-secondary">
-                                <img :src="extendedHours.imageUrl" alt="">
+                                <img src="/images/ext-hours-1.webp" alt="">
                             </div>
                         </div>
                         <div class="py-10">
                             <div class="text-left text-[#4d6582]">
-                                <h5 class="text-xl font-bold">{{ preMarket.title }}</h5>
-                                <p class="text-sm mt-4 mb-6">{{   preMarket.desc }}</p>
+                                <h5 class="text-xl font-bold">{{ $t('extended_hours_page.how_to_place_pre_market_after_market') }}</h5>
+                                <p class="text-sm mt-4 mb-6">{{   $t('extended_hours_page.log_in_to_your_account_click_on_the') }}</p>
                             </div>
                             <div>
-                                <img :src="preMarket.imageUrl" alt="">
+                                <img src="/images/ext-hours-2.webp" alt="">
                             </div>
                         </div>
                         <div class="text-left text-[#4d6582]">
-                            <h5 class=" text-xl font-bold mb-3">{{ tradingKnowledges.heading }}</h5>
+                            <h5 class=" text-xl font-bold mb-3">{{ $t('extended_hours_page.more_opportunities_to_trade') }}</h5>
                             <div>
                                 <ul class="list-disc list-inside " v-for="item in tradingKnowledges.knowledgeLists" :key="item.id">
-                                    <li class="text-md mb-1">{{ item.desc }}</li>
+                                    <li class="text-md mb-1">{{ $t(item.desc) }}</li>
                                 </ul>
                             </div>
                         </div>
                     </div>
                     <div class="col-span-12 lg:col-span-3">
                         <div class="bg-[#eff2f7] py-12 px-6 text-left">
-                            <h5 class="text-[#4d6582] font-bold text-xl mb-4">{{ transferFee.title }}</h5>
-                            <p class="text-md text-secondary" >{{ transferFee.details }}</p>
+                            <h5 class="text-[#4d6582] font-bold text-xl mb-4">{{ $t("extended_hours_page.transfer_to_us_for_Free") }}</h5>
+                            <p class="text-md text-secondary" >{{ $t("extended_hours_page.get_credit_for_the_account_transfer_fee_charged_by_other_brokers") }}</p>
                             <div class="mt-3">
-                                <a href="# " class="text-blue-500 hover:text-primary">Get Started</a>
+                                <a href="# " class="text-blue-500 hover:text-primary">{{ $t('link.get_started') }}</a>
                             </div>
                         </div>
                         
@@ -47,53 +47,35 @@
 export default{
     data(){
         return {
-            extendedHours: {
-                title:"Extended Hours Trading",
-                subtitle:"More Opportunities to Trade",
-                description:"We offer stock market after-hours & pre-market trading with securities listed on the NYSE, NASDAQ, or AMEX exchanges. With so many early trading options available, start with extended hours trading today!",
-                imageUrl:"/images/ext-hours-1.webp"
-
-            },
-            transferFee:{
-                title:"Transfer to Us for Free",
-                details:"Get credit for the account transfer fee charged by other brokers, and start taking advantage of our premium products and online trading services when you transfer to Firstrade.",
-                buttonText:"Get started",            
-            },
-            preMarket:{
-                title:"How to place Pre-Market, After-Market and Day + Ext stock trades",
-                desc:"Log in to your account, click on the “Trading” tab, then on the “Order Entry” pane, click on the “Duration” dropdown to choose “Pre-Mkt” or “After-Mkt” or “Day+Ext”",
-                imageUrl:"/images/ext-hours-2.webp",                
-                },
-                tradingKnowledges:{
-                    heading:"What you should know about trading during extended hours",
+                tradingKnowledges:{                   
                     knowledgeLists:[
                     {
                         id: 1,
-                        desc: "Same low $0 commission!",
+                        desc: "extended_hours_page.same_low_commission",
                     },
                     {
                         id: 2,
-                        desc: "Only limit orders are allowed.",
+                        desc: "extended_hours_page.only_limit_orders_are_allowed",
                     },
                     {
                         id: 3,
-                        desc: "The extended hours market is separate from the regular intraday trading-session.",
+                        desc: "extended_hours_page.the_extended_hours_market_is_separate",
                     },
                     {
                         id: 4,
-                        desc: "Benefit from the New Duration to trade through Pre-Market, Regular Market, and After-Market sessions with one order. “Day+Ext” order will allow you to trade in all sessions.",
+                        desc: "extended_hours_page.benefit_from_the_new_duration_to_trade_through",
                     },
                     {
                         id: 5,
-                        desc: "Order Modification - Price changes and cancellations of extended hours orders are permitted before the order is executed.",
+                        desc: "extended_hours_page.order_modification_price_changes_and_cancellations",
                     },
                     {
                         id: 6,
-                        desc: "Available securities - Securities listed on NYSE or NASDAQ or AMEX are available for trading during extended hours.",
+                        desc: "extended_hours_page.available_securities_securities_listed_on",
                     },
                     {
                         id: 7,
-                        desc: "OTC stocks, bonds, funds, options and other securities may be traded only during regular market hours",
+                        desc: "extended_hours_page.OTC_stocks_bonds_funds_options_and_other",
                     }
                 ]
             }

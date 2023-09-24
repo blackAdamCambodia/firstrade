@@ -5,18 +5,19 @@ import FooterView from './components/FooterView.vue'
 export default {
   data() {
     return {
-      closeToggle: false,      
+      closeToggle: false,
+      isLogin: false
     }
- 
+
   },
   methods: {
     receiveEmit() {
       this.closeToggle = !this.closeToggle;
     },
-   
+
   },
-  
- 
+
+
 
 }
 </script>

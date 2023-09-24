@@ -7,6 +7,36 @@ const routes = [
     component: Home,
   },
   {
+    path: "/about",
+    name: "about",
+    component: () => import("../views/About.vue"),
+  },
+  {
+    path: "/history",
+    name: "history",
+    component: () => import("../views/History.vue"),
+  },
+  {
+    path: "/corporate-responsibility",
+    name: "corporate-responsibility",
+    component: () => import("../views/CorporateResponsibility.vue"),
+  },
+  {
+    path: "/press",
+    name: "press",
+    component: () => import("../views/Press.vue"),
+  },
+  {
+    path: "/login",
+    name: "login",
+    component: () => import("../views/Login.vue"),
+  },
+  {
+    path: "/signup",
+    name: "signup",
+    component: () => import("../views/SignUp.vue"),
+  },
+  {
     path: "/trading",
     name: "trading",
     component: () => import("../views/Trading.vue"),
@@ -82,6 +112,30 @@ const routes = [
     name: "contact",
     component: () => import("../views/Contact.vue"),
   },
+  {
+    path: "/legal/terms",
+    name: "terms",
+    component: () => import("../views/Terms.vue"),
+  },
+  {
+    path: "/legal/privacy",
+    name: "privacy",
+    component: () => import("../views/Privacy.vue"),
+  },
+  {
+    path: "/legal/accessibility",
+    name: "accessibility",
+    component: () => import("../views/Accessibility.vue"),
+  },
+  {
+    path: "/legal/business-continuity",
+    name: "business-continuity",
+    component: () => import("../views/BusinessContinuity.vue"),
+  },
+  { 
+    path: '/:pathMatch(.*)*',
+    name: 'NotFound', 
+    component:  () => import("../views/NotFound.vue") },
 ];
 const router = createRouter({
   history: createWebHistory(),

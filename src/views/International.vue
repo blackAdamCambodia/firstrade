@@ -7,16 +7,16 @@
                 <div class="flex justify-between items-center">
                     <div class=" w-1/2 text-left">
                         <div class="text-left max-w-3xl">
-                            <h2 class="text-primary font-[900] text-5xl  mb-4 leading-snug">{{ international.title }}</h2>
-                            <p class="text-secondary text-xl max-w-md mb-6">{{ international.Subtitle }}</p>
+                            <h2 class="text-primary font-[900] text-5xl  mb-4 leading-snug">{{ $t('footer.international_accounts') }}</h2>
+                            <p class="text-secondary text-xl max-w-md mb-6">{{ $t('international_page.take_advantage_of_the_great_opportunities') }}</p>
                         </div>
                         <button class="!w-[136px] bg-warning hover:bg-[#e67021] p-3 py-2 text-center rounded-md">
-                            <a class="text-white " href="#">Open Account</a>
+                            <a class="text-white " href="#">{{ $t('button.open_account') }}</a>
                         </button>
 
                     </div>
                     <div class="w-1/2">
-                        <img class="w-full" :src="international.imageUrl" alt="">
+                        <img class="w-full" src="/images/ban_med_intlaccts.webp" alt="">
                     </div>
                 </div>
                 <div>
@@ -24,16 +24,16 @@
             </div>
         </div>
         <div class=" flex  justify-center items-center py-6 gap-3 bg-primaryLight">
-            <p class="text-lg text-secondary">2 Easy Steps to Open an International Account Online</p>
+            <p class="text-lg text-secondary">{{ $t('international_page.easy_steps_to_open_an_international_account') }}</p>
             <button class="!w-[200px] bg-primary hover:bg-blue-500 p-3 py-2  rounded-[4px]">
-                <a class=" text-center  text-white " href="#">Learn More</a>
+                <a class=" text-center  text-white " href="#">{{ $t('button.learn_more') }}</a>
             </button>
         </div>
         <!-- International Account  Hero part start-->
         <!-- Why choose Firstrade part start -->
         <div class="globals Benefits_container__sJSt_">
             <div class="m-auto max-w-7xl px-8  mt-8 ">
-                <h2 class="py-10 text-3xl text-primary font-[800] text-center lg:text-left">{{ ChooseFirstrade.title }}</h2>
+                <h2 class="py-10 text-3xl text-primary font-[800] text-center lg:text-left">{{ $t('international_page.why_choose_firstrade') }}</h2>
                 <div class="flex flex-wrap justify-between text-left">
                     <div class="flex max-w-[47%] gap-6 justify-between mb-8" v-for="item in ChooseFirstrade.options"
                         :key="item.id">
@@ -98,9 +98,7 @@
                         <ol class="mx-0 list-decimal">
                             <li>
                                 <div class=" text-md font-bold">Complete the 
-                                    <a class="text-blue-500" aria-label="Firstrade Online Application"
-                                        rel="noopener noreferrer"
-                                        href="https://signup.firstrade.com/create2/www/#/intro?lc=en-us">Firstrade Online
+                                    <a class="text-blue-500" href="/signup">Firstrade Online
                                         Application</a>
                                 </div>
                                 <div class="text-sm">During the online application process, you will need to upload images of your passport.
@@ -158,15 +156,7 @@ export default {
 
     data() {
         return {
-            international: {
-                title: "International Accounts",
-                Subtitle: "Take advantage of the great opportunities offered by the U.S. financial markets.",
-                imageUrl: "/images/ban_med_intlaccts.webp",
-
-            },
-
             ChooseFirstrade: {
-                title: "Why Choose Firstrade",
                 options: [
                     {
                         id: 1,
