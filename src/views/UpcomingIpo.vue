@@ -3,35 +3,35 @@
         <div class="container mx-auto">
             <div class="bg-white text-left text-secondary py-11 px-4">
                 <div class="container">
-                    <h1 class="mb-4 font-sans text-3xl text-primary">August 2023 IPO Calendar</h1>
+                    <h1 class="mb-4 font-sans font-bold text-3xl text-primary">{{ $t('upcoming_ipo_page.IPO_Calendar') }}</h1>
                     <div class="grid grid-cols-12 gap-x-8">
                         <div class="col-span-12 xl:col-span-9">
                             <div class="mb-4 overflow-x-auto pb-4">
                             <div class="table w-[928px] lg:w-full">
-                                <h3 class="table-caption font-bold font-sans text-xl">Upcoming</h3>
+                                <h3 class="table-caption font-bold font-sans text-xl">{{ $t('upcoming_ipo_page.upcoming') }}</h3>
                                 <div class="table-header-group">
                                     <div class="table-row">
                                         <div
                                             class="border-b-[3px] border-solid border-grayish-blue pr-4 font-bold text-base py-3 table-cell text-left">
-                                            Company Name</div>
+                                            {{ $t('upcoming_ipo_page.company_name') }}</div>
                                         <div
                                             class="border-b-[3px] border-solid border-grayish-blue pr-4 font-bold text-base py-3 table-cell text-left">
-                                            Symbol</div>
+                                            {{ $t('upcoming_ipo_page.symbol') }}</div>
                                         <div
                                             class="border-b-[3px] border-solid border-grayish-blue pr-4 font-bold text-base py-3 table-cell text-left">
-                                            Market</div>
+                                            {{ $t('upcoming_ipo_page.market') }}</div>
                                         <div
                                             class="border-b-[3px] border-solid border-grayish-blue pr-4 font-bold text-base py-3 table-cell text-left">
-                                            Price</div>
+                                            {{ $t('upcoming_ipo_page.price') }}</div>
                                         <div
                                             class="border-b-[3px] border-solid border-grayish-blue pr-4 font-bold text-base py-3 table-cell text-left">
-                                            Share</div>
+                                            {{ $t('upcoming_ipo_page.share') }}</div>
                                         <div
                                             class="border-b-[3px] border-solid border-grayish-blue pr-4 font-bold text-base py-3 table-cell text-left">
-                                            Offer Amount</div>
+                                            {{ $t('upcoming_ipo_page.offer_amount') }}</div>
                                         <div
                                             class="border-b-[3px] border-solid border-grayish-blue pr-4 font-bold text-base py-3 table-cell text-left">
-                                            Expected IPO date</div>
+                                            {{ $t('upcoming_ipo_page.expected_ipo_date') }}</div>
                                     </div>
                                 </div>
                                 <div class="table-row-group">
@@ -252,26 +252,27 @@
                                     <div class="table-row">
                                         <div
                                             class="border-b-[3px] border-solid border-grayish-blue pr-4 font-bold text-base py-3 table-cell text-left">
-                                            Company Name</div>
+                                            {{ $t('upcoming_ipo_page.company_name') }}</div>
                                         <div
                                             class="border-b-[3px] border-solid border-grayish-blue pr-4 font-bold text-base py-3 table-cell text-left">
-                                            Symbol</div>
+                                            {{ $t('upcoming_ipo_page.symbol') }}</div>
                                         <div
                                             class="border-b-[3px] border-solid border-grayish-blue pr-4 font-bold text-base py-3 table-cell text-left">
-                                            Market</div>
+                                            {{ $t('upcoming_ipo_page.market') }}</div>
                                         <div
                                             class="border-b-[3px] border-solid border-grayish-blue pr-4 font-bold text-base py-3 table-cell text-left">
-                                            Price</div>
+                                            {{ $t('upcoming_ipo_page.price') }}</div>
                                         <div
                                             class="border-b-[3px] border-solid border-grayish-blue pr-4 font-bold text-base py-3 table-cell text-left">
-                                            Share</div>
+                                            {{ $t('upcoming_ipo_page.share') }}</div>
                                         <div
                                             class="border-b-[3px] border-solid border-grayish-blue pr-4 font-bold text-base py-3 table-cell text-left">
-                                            Offer Amount</div>
+                                            {{ $t('upcoming_ipo_page.offer_amount') }}</div>
                                         <div
                                             class="border-b-[3px] border-solid border-grayish-blue pr-4 font-bold text-base py-3 table-cell text-left">
-                                            Priced Date</div>
+                                            {{ $t('upcoming_ipo_page.priced_date') }}</div>
                                     </div>
+                                    
                                 </div>
                                 <div class="table-row-group">
                                     <div class="table-row">
@@ -325,23 +326,23 @@
                         </div>
                         <p class="text-right text-blue-500 hover:text-primary mb-4 text-sm">Source: <a aria-label="NASDAQ IPOs Calendar"
                                 href="http://www.nasdaq.com/markets/ipos/activity.aspx?tab=upcoming" target="_blank"
-                                rel="noopener noreferrer" class="text-sm text-strong-blue">NASDAQ IPOs Calendar</a></p>
+                                rel="noopener noreferrer" class="text-sm text-strong-blue">{{ $t('upcoming_ipo_page.nasdaq_ipos_calendar') }}</a></p>
                     </div>
                     <div class="col-span-12 xl:col-span-3">
                         <div class="rounded-lg bg-[#eff2f7] p-6 ">
-                            <h5 class="mb-2 text-base font-semibold">Order Rule on IPO date</h5>
+                            <h5 class="mb-2 text-base font-semibold">{{ $t('upcoming_ipo_page.order_rule_on_ipo_date') }}</h5>
                             <div class="grid grid-cols-1 grid-rows-3 divide-y divide-grayish-blue bg-white">
                                 <div class="grid grid-cols-2 grid-rows-1">
-                                    <div class="p-2 text-sm">Before the market opens (9:30AM)</div>
-                                    <div class="p-2 text-sm">Limit Order Only</div>
+                                    <div class="p-2 text-sm">{{ $t('upcoming_ipo_page.before_the_market_opens') }}</div>
+                                    <div class="p-2 text-sm">{{ $t('upcoming_ipo_page.limit_order_only') }}</div>
                                 </div>
                                 <div class="grid grid-cols-2 grid-rows-1">
-                                    <div class="p-2 text-sm">9:30AM until approx. 15mins after IPO</div>
-                                    <div class="p-2 text-sm">Limit Order Only</div>
+                                    <div class="p-2 text-sm">{{ $t('upcoming_ipo_page.until_approx') }}</div>
+                                    <div class="p-2 text-sm">{{ $t('upcoming_ipo_page.limit_order_only') }}</div>
                                 </div>
                                 <div class="grid grid-cols-2 grid-rows-1">
-                                    <div class="p-2 text-sm">After IPO price stabilizes</div>
-                                    <div class="p-2 text-sm">All order types are accepted</div>
+                                    <div class="p-2 text-sm">{{ $t('upcoming_ipo_page.after_ipo_price_stabilizes') }}</div>
+                                    <div class="p-2 text-sm">{{ $t('upcoming_ipo_page.all_order_types_are_accepted') }}</div>
                                 </div>
                             </div>
                         </div>

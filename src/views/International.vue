@@ -41,8 +41,8 @@
                             <img class="w-full object-contain" :alt="item.title" :src="item.imageUrl">
                         </div>
                         <div class="text-[#4d6582] w-4/5">
-                            <h3 class="mb-4 text-xl font-[700]">{{ item.title }}</h3>
-                            <div class="text-lg md:text-base">{{ item.description }}</div>
+                            <h3 class="mb-4 text-xl font-[700]">{{ $t(item.title )}}</h3>
+                            <div class="text-lg md:text-base">{{ $t(item.description) }}</div>
                         </div>
                     </div>
                 </div>
@@ -52,13 +52,13 @@
         <!-- Invest us market part start -->
         <div class="bg-primaryLight py-6">
             <div class="m-auto max-w-7xl px-8  mt-8 ">
-                <h2 class="py-10 text-3xl text-primary font-[800] text-center lg:text-left">{{ usMarket.title }}</h2>
+                <h2 class="py-10 text-3xl text-primary font-[800] text-center lg:text-left">{{$t("international_page.why_choose_to_invest_in_the_US_market") }}</h2>
                 <div class="flex flex-wrap justify-between text-left">
                     <div class="flex max-w-[47%] gap-6 justify-between mb-8" v-for="item in usMarket.options"
                         :key="item.id">
                         <div class="text-[#4d6582]">
-                            <h3 class="mb-4 text-xl font-[700]">{{ item.title }}</h3>
-                            <div class="text-lg md:text-base">{{ item.description }}</div>
+                            <h3 class="mb-4 text-xl font-[700]">{{ $t(item.title) }}</h3>
+                            <div class="text-lg md:text-base">{{ $t(item.description) }}</div>
                         </div>
                     </div>
                 </div>
@@ -68,77 +68,65 @@
         <!-- How to open international Account part start -->
         <div class="py-8 text-left">
             <div class="m-auto max-w-7xl mt-4 px-8">
-                <h2 class="text-primary font-[800] text-3xl mb-10">How to open an international account</h2>
+                <h2 class="text-primary font-[800] text-3xl mb-10">{{ $t("international_page.how_to_open_an_international_account") }}</h2>
                 <div class="flex justify-between gap-8 text-secondary">
                     <div class="HowToOpen_boxInner__9jDtr">
-                        <h4 class="font-sans mb-4 font-semibold text-xl leading-tight">Do I qualify?</h4>
-                        <p class="text-sm">You may sign up for an international account if you are not a U.S. citizen or permanent resident,
-                            do not have a Social Security Number or Tax-ID Number.</p>
-                        <div class="text-lg py-6 font-bold">Supported Regions</div>
+                        <h4 class="font-sans mb-4 font-semibold text-xl leading-tight">{{ $t("international_page.do_i_qualify") }}</h4>
+                        <p class="text-sm" >{{ $t("international_page.you_may_sign_up_for_an_international_account") }}</p>
+                        <div class="text-lg py-6 font-bold">{{ $t("international_page.supported_regions") }}</div>
                         <ul class="list-disc list-inside">
-                            <li>China</li>
-                            <li>Hong Kong</li>
-                            <li>India</li>
-                            <li>Israel</li>
-                            <li>Japan</li>
-                            <li>Korea, Republic of (South)</li>
-                            <li>Macau</li>
-                            <li>Malaysia</li>
-                            <li>Mexico</li>
-                            <li>New Zealand</li>
-                            <li>Singapore</li>
-                            <li>Taiwan</li>
+                            <li>{{ $t("international_page.china") }}</li>
+                            <li>{{ $t("international_page.hong_kong") }}</li>
+                            <li>{{ $t("international_page.india") }}</li>
+                            <li>{{ $t("international_page.israel") }}</li>
+                            <li>{{ $t("international_page.japan") }}</li>
+                            <li>{{ $t("international_page.korea") }}</li>
+                            <li>{{ $t("international_page.macau") }}</li>
+                            <li>{{ $t("international_page.malaysia") }}</li>
+                            <li>{{ $t("international_page.mexico") }}</li>
+                            <li>{{ $t("international_page.new_zealand") }}</li>
+                            <li>{{ $t("international_page.singapore") }}</li>
+                            <li>{{ $t("international_page.taiwan") }}</li>
                         </ul>
                         <button class="text-blue-500 py-4 font-bold" type="button">See full list of supported
                             regions</button>
                     </div>
                     <div class="HowToOpen_boxInner__9jDtr">
-                        <h4 class="font-sans mb-4 font-semibold text-xl leading-tight">How to Apply</h4>
-                        <div class="text-sm">Please follow the steps below to open an International Individual Account online:</div>
+                        <h4 class="font-sans mb-4 font-semibold text-xl leading-tight">{{ $t("international_page.how_to_apply") }}</h4>
+                        <div class="text-sm">{{ $t("international_page.please_follow_the_steps_below_to_open_an_international_individual_account") }}</div>
                         <ol class="mx-0 list-decimal">
                             <li>
-                                <div class=" text-md font-bold">Complete the 
-                                    <a class="text-blue-500" href="/signup">Firstrade Online
-                                        Application</a>
+                                <div class=" text-md font-bold" >{{ $t('international_page.complete_the') }}
+                                    <a href="/signup" class="text-blue-500 hover:text-primary ">{{ $t('link.firstrade_online_application') }}</a>
                                 </div>
-                                <div class="text-sm">During the online application process, you will need to upload images of your passport.
-                                    Once your online application is submitted, please allow 1-2 business days for us to
-                                    review and process.</div>
+                                <div class="text-sm">{{ $t("international_page.during_the_online_application_process") }}</div>
                             </li><br>
                             <li>
-                                <div class="text-md font-bold">Fund your account</div>
-                                <div class="text-sm">Here are 2 simple methods for you to fund your Firstrade account:</div>
+                                <div class="text-md font-bold">{{ $t("international_page.fund_your_account") }}</div>
+                                <div class="text-sm">{{ $t("international_page.here_are_simple_methods_for_you_to_fund_your_firstrade_account") }}</div>
                                 <ul class="list-disc list-inside text-sm py-4" >
                                     <li >
-                                        Wire Transfer – It only takes 1-2 business days for your wire transfer to be
-                                            deposited into your Firstrade account. It will be available for trading as soon
-                                            as the funds are posted to your account. Please click <a
-                                                href="/support/funding">here</a> for wire instructions.
+                                        {{ $t("international_page.wire_transfer_it_only_takes_one_two_business_day") }}
                                     </li>
                                     <li>
-                                        ACH Electronic Funds Transfer - If you have a U.S.-based bank account, you may
-                                            link your bank account to your Firstrade account. Once you complete the setup,
-                                            you’ll be able to transfer funds electronically without any fees. Here are two
-                                            ways you can setup your ACH bank profile:
+                                        {{ $t("international_page.ACH_electronic_funds_transfer_if_you_have") }}
                                     </li>
                                 </ul>
                                 <div class="ml-4">
-                                    <div class="font-bold  text-md">Firstrade App</div>
+                                    <div class="font-bold  text-md"> {{ $t("international_page.Firstrade_App") }}</div>
                                     <ol class="list-decimal mt-0 text-sm ml-4">
-                                        <li><a class="text-blue-500 hover:text-primary" href="/resources/mobile">Download &amp; login</a> to your Firstrade Account
+                                        <li>{{ $t("international_page.download_login_to_your_firstrade_account") }}
                                         </li>
-                                        <li>Go to Account &gt; Deposit/Withdrawal</li>
-                                        <li>Click Setup Now, and follow the onscreen instructions</li>
+                                        <li>{{ $t("international_page.go_to_account") }}</li>
+                                        <li>{{ $t("international_page.click_Setup_Now_and_follow") }}</li>
                                     </ol>
                                     <div class="py-4">
-                                        <div class="font-bold  text-md">Firstrade Website</div>
+                                        <div class="font-bold  text-md">{{ $t("international_page.Firstrade_Website") }}</div>
                                         <ol class="list-decimal mt-0 text-sm ml-4">
-                                            <li><a aria-label="Login"
-                                                    href="https://invest.firstrade.com/cgi-bin/login?ft_locale=en-us"
-                                                    rel="noopener noreferrer">Login</a> to your Firstrade account</li>
-                                            <li>Go to My Account &gt; Deposit/Transfer &gt; Bank Profile &gt; Setup a Bank
-                                                Profile</li>
-                                            <li>Follow the onscreen direction instructions</li>
+                                            <li><a class="text-blue-500 hover:text-primary"
+                                                    href="/login">{{ $t('topMenu.login') }}</a> {{ $t("international_page.to_your_Firstrade_account") }}</li>
+                                            <li>{{ $t("international_page.Go_to_My_Account") }}</li>
+                                            <li>{{ $t("international_page.Follow_the_onscreen_direction_instructions") }}</li>
                                         </ol>
                                     </div>
                                 </div>
@@ -161,91 +149,90 @@ export default {
                     {
                         id: 1,
                         imageUrl: "/images/icon_fullsuite.svg",
-                        title: "Full Suite of Investment Products",
-                        description: "Our full suite of investment products include stocks, options, Exchange Traded Funds (ETFs), mutual funds, bonds and CDs."
+                        title: "international_page.full_suite_of_investment_products",
+                        description: "international_page.our_full_suite_of_investment_products_include_stocks"
                     },
                     {
                         id: 2,
                         imageUrl: "/images/icon_platforms.svg",
-                        title: "Online & mobile trading platform and tools",
-                        description: "You will have the convenience to access your account information, order status, option chains and most updated market news via online or mobile devices at anywhere, anytime. We also offer a variety of free professional tools such as the advanced screener, stock price alert, streaming watchlist to assist you in building your investment portfolio."
+                        title: "international_page.online_mobile_trading_platform_and_tools",
+                        description: "international_page.you_will_have_the_convenience_to_access_your_account"
                     },
                     {
                         id: 3,
                         imageUrl: "/images/icon_38yrs.webp",
-                        title: "38 years of experience",
-                        description: "Founded in 1985, Firstrade has been a leading online investment firm offering a full line of investment products and tools designed to help investors take control of their financial future. Firstrade is also a member of FINRA and SIPC.",
+                        title: "international_page.years_of_experience",
+                        description: "international_page.founded_in_firstrade_has_been_a_leading_online",
 
                     },
                     {
                         id: 4,
                         imageUrl: "/images/sipc_logo.svg",
-                        title: "Additional account insurance",
-                        description: "Our clearing firm, Apex Clearing Corporation, has purchased an additional insurance policy through a group of London Underwriters (with Lloyd's of London Syndicates as the Lead Underwriter) to supplement SIPC protection. This additional insurance policy becomes available to customers in the event that SIPC limits are exhausted and provides protection for securities and cash up to an aggregate of $150 million.",
+                        title: "international_page.additional_account_insurance",
+                        description: "international_page.our_clearing_firm_apex_clearing_corporation",
 
                     },
                     {
                         id: 5,
                         imageUrl: "/images/icon_service.webp",
-                        title: "Exceptional Customer Service in English, Mandarin & Cantonese",
-                        description: "To ensure a smooth and exceptional international stock trading experience at Firstrade, our highly trained customer service representatives are ready to help you in your language of preference. We currently provide our service in English, Mandarin and Cantonese. Our trading platform is also available in English, Traditional Chinese and Simplified Chinese versions."
+                        title: "international_page.exceptional_customer_service_in_english",
+                        description: "international_page.firstrade_offers_comprehensive_array_of_online"
                     },
                     {
                         id: 6,
                         imageUrl: "/images/morningstar_logo.svg",
-                        title: "Comprehensive Research Tools from the world’s most trusted investment news providers such as Morningstar",
-                        description: "Firstrade offers comprehensive array of online broker tools, market insights and stock analysis reports that help you make sound decision in building your investment portfolio. These reports are provided by the world's most authoritative financial company, such as Morningstar, Briefing.com, Zacks, Benzinga and PR newswire."
+                        title: "international_page.comprehensive_research_tools_from_the_worlds_most_trusted",
+                        description: "international_page.firstrade_offers_comprehensive_array_of_online",
+                        
                     },
                     {
                         id: 7,
                         imageUrl: "/images/icon_paperless.svg",
-                        title: "Easy Account Opening Process",
-                        description: "Opening an account at Firstrade is easy. You just need to fill out the online forms and send us the documents via email or fax. At Firstrade, we save your trading records and financial documents for up to 7 years. You can easily check and print your statements, trading confirmations and tax documents at your convenience.",
+                        title: "international_page.easy_account_opening_process",
+                        description: "international_page.opening_an_account_at_firstrade_is_easy"
 
                     },
                     {
                         id: 8,
-                        imageUrl: "/images/icon_0comm .svg",
-                        title: "Low commission",
-                        description: "You can trade through online or mobile devices with our low commission of $0 per trade. No minimum stock trading deposit and account maintenance fee.",
-
+                        imageUrl: "/images/icon_0comm .svg",                        
+                        title: "international_page.low_commission",
+                        description: "international_page.you_can_trade_through_online_or_mobile",
                     }
                 ]
             },
             usMarket: {
-                title: "Why choose to invest in the US market?",
                 options: [
                     {
                         id: 1,
-                        title: "Product Variety",
-                        description: "The U.S market offers a variety of investment products including stocks, options, ETFs mutual funds and bonds. The variety provides investors the flexibility to select the products of their choosing based on their financial needs. In addition, investors are also allowed to execute special orders depending on the market condition as well as the risk tolerance and trading style of each investor."
+                        title: "international_page.product_variety",
+                        description: "international_page.the_US_market_offers_a_variety_of_investment_products_including_stock"
                     },
                     {
                         id: 2,
-                        title: "U.S Tax Benefits",
-                        description: "The U.S government encourages global investors to invest in the U.S. market. Therefore, most of the foreign investors can take advantage of certain tax benefits where they will not have to pay taxes on capital gain by filling out the W-8Ben form. In most cases, foreign investors can apply through Internal Revenue Service for the tax refund that was previously charged on the dividends earned."
+                        title: "international_page.US_Tax_Benefits",
+                        description: "international_page.the_US_government_encourages_global_investors_to_invest"
                     },
                     {
                         id: 3,
-                        title: "Strict U.S Regulatory System & Transparent Public Company Financial Records",
-                        description: "All companies listed in the U.S stock market are highly regulated by the Securities and Exchange Commission. Most of the operating and financial documents are also available to the public. The U.S securities regulatory agencies include three main organizations: The Securities and Exchange Commission, Financial Industry Regulatory Authority and Securities Investor Protection Corporation.",
+                        title: "international_page.strict_US_regulatory_system_transparent_public_company",
+                        description: "international_page.all_companies_listed_in_the_US_stock_market_are_highly",
 
                     },
                     {
                         id: 4,
-                        title: "Global Portfolio Diversification",
-                        description: "Enterprises from different countries and industries often choose to be listed in the U.S. stock market, but not other stock markets of the globe. By investing in the U.S stock market, investors will have the ability to have a diversified international stock trading portfolio internationally. In addition to global diversification, by trading ETFs and mutual funds, it also provides investors the advantage of choosing their investments specifically targeted to a particular sector or industry.",
+                        title: "international_page.global_portfolio_diversification",
+                        description: "international_page.enterprises_from_different_countries_and_industries",
 
                     },
                     {
                         id: 5,
-                        title: "Low Cost & No Minimum Trading Requirements",
-                        description: "Costs are relatively low for self-directed online trades. There are no minimum stock trading requirements on the number of shares per trade. You can have as little as one share per trade."
+                        title: "international_page.low_cost_no_minimum_trading_requirements",
+                        description: "international_page.costs_are_relatively_low_for_self_directed"
                     },
                     {
                         id: 6,
-                        title: "Account Protection",
-                        description: "Costs are relatively low for self-directed online trades. There are no minimum stock trading requirements on the number of shares per trade. You can have as little as one share per trade."
+                        title: "international_page.account_protection",
+                        description: "international_page.sipc_protects_brokerage_accounts_of_each"
                     },
 
                 ]

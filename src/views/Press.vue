@@ -4,16 +4,16 @@
             <div class="container mx-auto max-w-3xl">
                 <div class="flex justify-between text-[#4d6582]   ">
                     <button class="border-b-2 border-b-transparent pb-2 ">
-                        <router-link to="/about">About</router-link>
+                        <router-link to="/about">{{ $t('footer.about') }}</router-link>
                     </button>
                     <button class="border-b-2 border-b-transparent pb-2">
-                        <router-link to="/history">History</router-link>
+                        <router-link to="/history">{{ $t('footer.history') }}</router-link>
                     </button>
                     <button class="border-b-2 border-b-transparent pb-2">
-                        <router-link to="/corporate-responsibility">Corporate Responsibility</router-link>
+                        <router-link to="/corporate-responsibility">{{ $t('footer.corporate_responsibility') }}</router-link>
                     </button>
                     <button class="border-b-2 border-b-[#4d6582] pb-2">
-                        <router-link to="/press">Press</router-link>
+                        <router-link to="/press">{{ $t('footer.press') }}</router-link>
                     </button>
                 </div>
             </div>
@@ -21,7 +21,7 @@
         <div>
             <section aria-labelledby="press-center-title" class="PressCenter_container__Btg66">
                 <div class="PressCenter_wrapper__C_Hy6">
-                    <h1 id="press-center-title" class="PressCenter_header__9eve4 ">Press Center</h1>
+                    <h1 id="press-center-title" class="PressCenter_header__9eve4 ">{{ $t('press.press_center') }}</h1>
                     <div class="PressCenter_blogs__q2bdp">
                         <div class="PressCenter_blogWrapper__u2BcV">
                             <div class="PressCenter_blogHeader__g90iH">
@@ -31,14 +31,10 @@
                             </div>
                             <div class="PressCenter_blogContent__wEUlB">
                             <p class="m-0 PressCenter_blogContentDate__2Uff8">October 19, 2022</p>
-                            <h2 class="font-sans PressCenter_blogContentTitle__f0bV_ PressCenter_noSubtitle___0JRM">
-                                Firstrade donates pallets of bottled water to support hurricane Ian relief efforts</h2>
-                            <p class="m-0 PressCenter_blogContentArticle__INlbs">Hurricane Ian made landfall into west
-                                of Fort Myers, Florida on September 28 as a Category-4 storm, causing many fatalities
-                                and catastrophic damage to cities in its path. In the aftermath, many Florida residents
-                                experienced displacement, flooding, power outages and damage to their homes.</p>
-                            <div class="PressCenter_goToDetailLink__kji_S"><a href="/press/pr20221019">READ FULL ARTICLE
-                                    &gt;</a></div>
+                            <h2 class="font-sans PressCenter_blogContentTitle__f0bV_ PressCenter_noSubtitle___0JRM">{{ $t('press.firstrade_donates_pallets_of_bottled') }}</h2>
+                            <p class="m-0 PressCenter_blogContentArticle__INlbs">{{ $t('press.hurricane_ian_made_landfall_into_west') }}</p>
+                            <div class="PressCenter_goToDetailLink__kji_S"><a href="/press/pr20221019">{{$t('link.read_full_article')}}
+                                   </a></div>
                         </div>
                     </div>
                     <div class="PressCenter_blogWrapper__u2BcV">
@@ -49,15 +45,10 @@
                         </div>
                         <div class="PressCenter_blogContent__wEUlB">
                             <p class="m-0 PressCenter_blogContentDate__2Uff8">July 20, 2022</p>
-                            <h2 class="font-sans PressCenter_blogContentTitle__f0bV_ PressCenter_noSubtitle___0JRM">
-                                Tezos, The Graph, ALGO, CRV and XLM added to Firstrade Crypto</h2>
-                            <p class="m-0 PressCenter_blogContentArticle__INlbs">Online investment brokerage Firstrade
-                                Securities has announced support for several highly popular digital assets following the
-                                recent launch of the Firstrade cryptocurrency trading platform, expanding initial
-                                digital asset launch listings with a series of cryptocurrency trading pairs that include
-                                Tezos (XTZ), The Graph (GRT), Algorand (ALGO), Curve DAO (CRV), and Stellar (XLM).</p>
-                            <div class="PressCenter_goToDetailLink__kji_S"><a href="/press/pr220720">READ FULL ARTICLE
-                                    &gt;</a></div>
+                            <h2 class="font-sans PressCenter_blogContentTitle__f0bV_ PressCenter_noSubtitle___0JRM">{{ $t('press.tezos_the_graph_algo_crv') }}</h2>
+                            <p class="m-0 PressCenter_blogContentArticle__INlbs">{{ $t('press.online_investment_brokerage_Firstrade_Securities') }}</p>
+                            <div class="PressCenter_goToDetailLink__kji_S"><a href="/press/pr220720">{{$t('link.read_full_article')}}
+                                   </a></div>
                         </div>
                     </div>
                     <div class="PressCenter_blogWrapper__u2BcV">
@@ -68,15 +59,11 @@
                         </div>
                         <div class="PressCenter_blogContent__wEUlB">
                             <p class="m-0 PressCenter_blogContentDate__2Uff8">May 03, 2022</p>
-                            <h2 class="font-sans PressCenter_blogContentTitle__f0bV_ null">Firstrade Crypto Is Now Live
-                                Nationwide</h2>
-                            <p class="m-0 PressCenter_blogContentSubtitle__bLP8m">First major traditional online
-                                brokerage to offer crypto trading</p>
-                            <p class="m-0 PressCenter_blogContentArticle__INlbs">Firstrade Securities, a leading
-                                commission-free online brokerage, launched crypto trading on its app through Firstrade
-                                Crypto LLC. It is available in all U.S. states starting today.</p>
-                            <div class="PressCenter_goToDetailLink__kji_S"><a href="/press/pr220502">READ FULL ARTICLE
-                                    &gt;</a></div>
+                            <h2 class="font-sans PressCenter_blogContentTitle__f0bV_ null">{{ $t('press.firstrade_crypto_is_now_live_nationwide') }}</h2>
+                            <p class="m-0 PressCenter_blogContentSubtitle__bLP8m">{{ $t('press.first_major_traditional_online_brokerage_to_offer_crypto_trading') }}</p>
+                            <p class="m-0 PressCenter_blogContentArticle__INlbs">{{ $t('press.firstrade_securities_a_leading_commission_free_online_brokerage') }}</p>
+                            <div class="PressCenter_goToDetailLink__kji_S"><a href="/press/pr220502">{{$t('link.read_full_article')}}
+                                   </a></div>
                         </div>
                     </div>
                     <div class="PressCenter_blogWrapper__u2BcV">
@@ -87,15 +74,10 @@
                         </div>
                         <div class="PressCenter_blogContent__wEUlB">
                             <p class="m-0 PressCenter_blogContentDate__2Uff8">May 03, 2022</p>
-                            <h2 class="font-sans PressCenter_blogContentTitle__f0bV_ null">Firstrade first to offer
-                                individual crypto trading, beats Schwab and TD Ameritrade</h2>
-                            <p class="m-0 PressCenter_blogContentSubtitle__bLP8m">Firstrade will be the first of the
-                                major institutional online brokerages to offer individual cryptocurrency trading</p>
-                            <p class="m-0 PressCenter_blogContentArticle__INlbs">A leading online brokerage firm is
-                                diving head-first into the world of cryptocurrencies and the rapidly expanding business
-                                of crypto trading, FOX Business has learned.</p>
-                            <div class="PressCenter_goToDetailLink__kji_S"><a href="/press/fox-20220503">READ FULL
-                                    ARTICLE &gt;</a></div>
+                            <h2 class="font-sans PressCenter_blogContentTitle__f0bV_ null">{{ $t('press.firstrade_first_to_offer_individual_crypto') }}</h2>
+                            <p class="m-0 PressCenter_blogContentSubtitle__bLP8m">{{ $t('press.firstrade_will_be_the_first_of_the_major_institutional_online_brokerages') }}</p>
+                            <p class="m-0 PressCenter_blogContentArticle__INlbs mt-2">{{ $t('press.leading_online_brokerage_firm_is_diving_head_first') }}</p>
+                            <div class="PressCenter_goToDetailLink__kji_S"><a href="/press/fox-20220503">{{$t('link.read_full_article')}}</a></div>
                         </div>
                     </div>
                     <div class="PressCenter_blogWrapper__u2BcV">
@@ -106,14 +88,10 @@
                         </div>
                         <div class="PressCenter_blogContent__wEUlB">
                             <p class="m-0 PressCenter_blogContentDate__2Uff8">May 03, 2022</p>
-                            <h2 class="font-sans PressCenter_blogContentTitle__f0bV_ PressCenter_noSubtitle___0JRM">
-                                Firstrade Crypto Live Nationwide: First Major Traditional Online Brokerage to Offer
-                                Crypto Trading</h2>
-                            <p class="m-0 PressCenter_blogContentArticle__INlbs">Firstrade Securities, a leading
-                                commission-free online brokerage, launched crypto trading on its app through Firstrade
-                                Crypto LLC. It is available in all U.S. states starting today.</p>
-                            <div class="PressCenter_goToDetailLink__kji_S"><a href="/press/pr220503_2">READ FULL ARTICLE
-                                    &gt;</a></div>
+                            <h2 class="font-sans PressCenter_blogContentTitle__f0bV_ PressCenter_noSubtitle___0JRM">{{ $t('press.firstrade_crypto_live_nationwide') }}</h2>
+                            <p class="m-0 PressCenter_blogContentArticle__INlbs">{{ $t('press.Firstrade_Securities_a_leading_commission_free_online') }}</p>
+                            <div class="PressCenter_goToDetailLink__kji_S"><a href="/press/pr220503_2">{{$t('link.read_full_article')}}
+                                   </a></div>
                         </div>
                     </div>
                     <div class="PressCenter_blogWrapper__u2BcV">
@@ -124,14 +102,10 @@
                         </div>
                         <div class="PressCenter_blogContent__wEUlB">
                             <p class="m-0 PressCenter_blogContentDate__2Uff8">April 11, 2022</p>
-                            <h2 class="font-sans PressCenter_blogContentTitle__f0bV_ PressCenter_noSubtitle___0JRM">
-                                Firstrade Adds Crypto Trading</h2>
-                            <p class="m-0 PressCenter_blogContentArticle__INlbs">Firstrade Securities Inc., a leading
-                                commission-free online brokerage, has added crypto trading to its platform. It is
-                                available by invitation to selected Firstrade customers starting today and to investors
-                                nationwide soon.</p>
-                            <div class="PressCenter_goToDetailLink__kji_S"><a href="/press/pr220503_2">READ FULL ARTICLE
-                                    &gt;</a></div>
+                            <h2 class="font-sans PressCenter_blogContentTitle__f0bV_ PressCenter_noSubtitle___0JRM">{{ $t('press.firstrade_adds_crypto_trading') }}</h2>
+                            <p class="m-0 PressCenter_blogContentArticle__INlbs">{{ $t('press.firstrade_securities_inc_a_leading_commission_free') }}</p>
+                            <div class="PressCenter_goToDetailLink__kji_S"><a href="/press/pr220503_2">{{$t('link.read_full_article')}}
+                                   </a></div>
                         </div>
                     </div>
                     <div class="PressCenter_blogWrapper__u2BcV">
@@ -142,16 +116,11 @@
                         </div>
                         <div class="PressCenter_blogContent__wEUlB">
                             <p class="m-0 PressCenter_blogContentDate__2Uff8">April 11, 2022</p>
-                            <h2 class="font-sans PressCenter_blogContentTitle__f0bV_ null">Firstrade Adds Crypto Trading
-                            </h2>
-                            <p class="m-0 PressCenter_blogContentSubtitle__bLP8m">First traditional online brokerage to
-                                offer crypto trading in the U.S.</p>
-                            <p class="m-0 PressCenter_blogContentArticle__INlbs">Firstrade Securities Inc., a leading
-                                commission-free online brokerage, has added crypto trading to its platform. It is
-                                available by invitation to selected Firstrade customers starting today and to investors
-                                nationwide soon.</p>
-                            <div class="PressCenter_goToDetailLink__kji_S"><a href="/press/pr220411_1">READ FULL ARTICLE
-                                    &gt;</a></div>
+                            <h2 class="font-sans PressCenter_blogContentTitle__f0bV_ null">{{ $t('press.firstrade_adds_crypto_trading_US') }}</h2>
+                            <p class="m-0 PressCenter_blogContentSubtitle__bLP8m">{{ $t('press.first_traditional_online_brokerage_to_offer_crypto_trading_in_the') }}</p>
+                            <p class="m-0 PressCenter_blogContentArticle__INlbs">{{ $t('press.firstrade_securities_Inc_a_leading_commission_free_online_brokerage') }}</p>
+                            <div class="PressCenter_goToDetailLink__kji_S"><a href="/press/pr220411_1">{{$t('link.read_full_article')}}
+                                   </a></div>
                         </div>
                     </div>
                     <div class="PressCenter_blogWrapper__u2BcV">
@@ -162,12 +131,10 @@
                         </div>
                         <div class="PressCenter_blogContent__wEUlB">
                             <p class="m-0 PressCenter_blogContentDate__2Uff8">April 05, 2022</p>
-                            <h2 class="font-sans PressCenter_blogContentTitle__f0bV_ PressCenter_noSubtitle___0JRM">
-                                Firstrade Adds Crypto Trading In The US</h2>
-                            <p class="m-0 PressCenter_blogContentArticle__INlbs">Firstrade Securities announced the
-                                addition of cryptocurrency trading.</p>
-                            <div class="PressCenter_goToDetailLink__kji_S"><a href="/press/pr220405">READ FULL ARTICLE
-                                    &gt;</a></div>
+                            <h2 class="font-sans PressCenter_blogContentTitle__f0bV_ PressCenter_noSubtitle___0JRM">{{ $t('press.firstrade_adds_crypto_trading_in_the_US') }}</h2>
+                            <p class="m-0 PressCenter_blogContentArticle__INlbs">{{ $t('press.firstrade_securities_announced_the_addition_of') }}</p>
+                            <div class="PressCenter_goToDetailLink__kji_S"><a href="/press/pr220405">{{$t('link.read_full_article')}}
+                                   </a></div>
                         </div>
                     </div>
                 </div>

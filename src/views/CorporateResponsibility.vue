@@ -4,16 +4,16 @@
             <div class="container mx-auto max-w-3xl px-6">
                 <div class="flex justify-between text-[#4d6582]   ">
                     <button class="border-b-2 border-b-transparent pb-2 ">
-                        <a href="/about">About</a>
+                        <a href="/about">{{ $t('footer.about') }}</a>
                     </button>
                     <button class="border-b-2 border-b-transparent pb-2">
-                        <a href="/history">History</a>
+                        <a href="/history">{{ $t('footer.history') }}</a>
                     </button>
                     <button class="border-b-2 border-b-[#4d6582] pb-2">
-                        <a href="/corporate-responsibility">Corporate Responsibility</a>
+                        <a href="/corporate-responsibility">{{ $t('footer.corporate_responsibility') }}y</a>
                     </button>
                     <button class="border-b-2 border-b-transparent pb-2">
-                        <a href="/press">Press</a>
+                        <a href="/press">{{ $t('footer.press') }}</a>
                     </button>
                 </div>
             </div>
@@ -22,42 +22,22 @@
             <section aria-labelledby="community-title">
                 <div class="m-auto max-w-5xl px-8 py-20 lg:px-10 text-left text-secondary lg:py-20">
                     <div>
-                        <h1 id="community-title" class="mb-8 font-bold font-sans text-4xl text-primary text-center">Community First with Firstrade</h1>
-                        <p>At Firstrade, we believe that community comes first. Each year as our client base has grown, so
-                            has our commitment to making the world a better place. One of the most important ways we show
-                            our support is by giving to nonprofit organizations that are devoted to improving the lives,
-                            health and safety of everyone in our global community.</p>
-                        <p class="font-bold py-4">Firstrade: Supporting the health and safety of our global community</p>
-                        <p>A company's true culture is demonstrated by the way it reaches out to those in need. Since 1985
-                            we have been devoted to many charitable causes that matter to our employees, our accountholders
-                            and our community. Whether we’re donating to victims of a natural disaster, giving to an
-                            organization like The Red Cross, or sponsoring an event such as Relay for Life, we are dedicated
-                            to having a positive impact on the world around us. Have a look at some of the ways we've
-                            demonstrated our commitment to community below!</p>
+                        <h1 id="community-title" class="mb-8 font-bold font-sans text-4xl text-primary text-center">{{ $t('corporate_responsibility_page.community_first_with_firstrade') }}</h1>
+                        <p>{{ $t('corporate_responsibility_page.at_firstrade_we_believe_that_community_comes') }}</p>
+                        <p class="font-bold py-4">{{ $t('corporate_responsibility_page.supporting_the_health_and_safety_of_our_global_community') }}</p>
+                        <p>{{ $t('corporate_responsibility_page.company_true_culture_is_demonstrated_by_the_way') }}</p>
                     </div>
                     <div class="my-8 overflow-hidden rounded border border-grayish-blue">
                         <div class="h-24 bg-[url(/images/img_palettes.jpg)] bg-cover md:h-64 lg:h-80"></div>
                         <div class="mt-8 p-4">
-                            <h2 class="text-2xl text-primary font-bold">Hurricane Ian Relief</h2>
-                            <p class="m-0 py-2 font-bold">October 26, 2022</p>
+                            <h2 class="text-2xl text-primary font-bold">{{ $t('corporate_responsibility_page.hurricane_ian_relief') }}</h2>
+                            <p class="m-0 py-2 font-bold">{{ $t('corporate_responsibility_page.octobar_date') }}</p>
                             <div class="flex flex-col gap-8 lg:flex-row">
                                 <div>
-                                    <p>ORLANDO, FLORIDA – Hurricane Ian made landfall west of Fort Myers, Florida on
-                                        September 28 as a Category-4 storm, causing many fatalities and catastrophic damage
-                                        to cities in its path. In the aftermath, many Florida residents experienced
-                                        displacement, flooding, power outages and damage to their homes.</p>
-                                    <p class="py-3">Firstrade worked closely with the area’s main bottled water distributor, Blue Triton,
-                                        and the largest church in Fort Myers (First Assembly of God - an official relief
-                                        distribution center) to reach distressed communities in the Fort Myers area and
-                                        supply them with 23 pallets of drinkable water.</p>
-                                    <p>“Working directly with the local community enabled us to cut through the red tape and
-                                        normal delays that occur in a crisis to get the relief to the affected communities
-                                        sooner.” said Jeff Huang, CIO of Firstrade.</p>
-                                    <p class="py-3">The cleanup and restoration process is expected to take some weeks, however Firstrade
-                                        is continuing to support the Florida community during these testing times. The new
-                                        Orlando FL branch and its support to the Floridian community is the start of
-                                        continued initiatives in the state, to help the community get back on its feet after
-                                        the devastation brought by Ian.</p>
+                                    <p>{{ $t('corporate_responsibility_page.orlando_florida_hurricane_ian_made') }}</p>
+                                    <p class="py-3">{{ $t('corporate_responsibility_page.firstrade_worked_closely_with_the_area') }}</p>
+                                    <p>{{ $t('corporate_responsibility_page.working_directly_with_the_local_community') }}</p>
+                                    <p class="py-3">{{ $t('corporate_responsibility_page.the_cleanup_and_restoration_process_is_expected') }}.</p>
                                 </div>
                                 <div class="w-full text-center">
                                     <img src="/images/img_ian_relief.webp" alt="">
@@ -69,25 +49,16 @@
                         <div class="h-24 bg-[url(/images/csr_lg_makingstrides.jpg)] bg-cover md:h-64 lg:h-80">
                         </div>
                         <div class="mt-8 p-4">
-                            <h2 class="text-2xl text-primary font-bold">Making Strides</h2>
-                            <p class="m-0 py-3 font-bold">Help us transform the world by taking part in our upcoming events</p>
+                            <h2 class="text-2xl text-primary font-bold">{{ $t('corporate_responsibility_page.making_strides') }}</h2>
+                            <p class="m-0 py-3 font-bold">{{ $t('corporate_responsibility_page.help_us_transform_the_world_by_taking_part') }}</p>
                             <div class="flex flex-col gap-8 lg:flex-row">
                                 <div>
-                                    <p>We are excited to announce that on October 18, 2015 we will be sponsoring the
-                                        American Cancer Society’s Making Strides Against Breast Cancer walk. We invite
-                                        everyone to visit our booth in Central Park. When you stop by, you’ll receive a free
-                                        selfie stick to give your cancer walk selfies a whole new angle.</p>
-                                    <p class="py-3">In addition to giving away selfie sticks, Firstrade will also be giving away Fitbit
-                                        Flex Trackers to 5 lucky “Making Strides NYC” participants who post a picture or
-                                        video that garners the most likes on our <a
+                                    <p>{{ $t('corporate_responsibility_page.we_are_excited_to_announce_that_on_October') }}</p>
+                                    <p class="py-3">{{ $t('corporate_responsibility_page.in_addition_to_giving_away_selfie_sticks') }} <a
                                             href="https://www.facebook.com/events/888177214601034/" target="_blank"
                                             rel="noopener noreferrer">Facebook event page</a>.</p>
-                                    <p>Breast cancer isn’t a disease we can cure with a one-day event, so Firstrade will
-                                        continue making donations throughout Breast Cancer Awareness month. We will be
-                                        giving $5 to breast cancer research for every account opened using the MAKINGSTRIDES
-                                        verification code during October.</p>
-                                    <p class="py-3">We are honored to make a difference in our global community and proud of the
-                                        difference our employees and accountholders make. Together, we can change the world.
+                                    <p>{{ $t('corporate_responsibility_page.breast_cancer_is_not_a_disease_we_can_cure') }}</p>
+                                    <p class="py-3">{{ $t('corporate_responsibility_page.we_are_honored_to_make_a_difference_in_our_global') }}
                                     </p>
                                 </div>
                                 <div class="w-full text-center"><span

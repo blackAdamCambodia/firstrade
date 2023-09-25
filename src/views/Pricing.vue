@@ -785,7 +785,7 @@
                                         <div class="grid w-[1100px] xl:w-[1248px] grid-cols-12 grid-rows-6">
                                             <div
                                                 class="text-base font-bold border-b-[3px] border-solid border-grayish-blue text-secondary py-3 col-span-2 flex items-center pl-1 sm:pl-2.5">
-                                               {{$t("pricing_page.commission")}}s</div>
+                                               {{$t("pricing_page.commission")}}</div>
                                             <div
                                                 class="border-b border-solid border-grayish-blue py-3 col-span-2 flex items-center font-bold text-lg text-liberty bg-lividity text-center flex items-center justify-center !border-b-[3px]">
                                                 {{$t("pricing_page.firstrade")}}</div>
@@ -893,7 +893,7 @@
                                                 $0</div>
                                         </div>
                                     </div>
-                                    <div class="text-dark-grayish-blue text-xs">{{$t("pricing_page.pricing_for_competitors_were_obtained_from")}}</div>
+                                    <div class="text-[#96a1b1] text-xs text-left">{{$t("pricing_page.pricing_for_competitors_were_obtained_from")}}</div>
                                 </div>
                             </div>
                         </div>

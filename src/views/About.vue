@@ -2,18 +2,16 @@
     <div @click="toggleFunction">
         <div  class="bg-[#f3f9ff] pt-20">
             <div
-                class="container px-3 flex items-center gap-8 justify-between py-4 sm:max-w-none md:max-w-none lg:max-w-7xl lg:py-5 mx-auto">
+                class="container px-6 flex items-center gap-8 justify-between py-4 sm:max-w-none md:max-w-none lg:max-w-7xl lg:py-5 mx-auto">
                 <div class="flex flex-col gap-4 justify-center w-full items-center pb-6 ">
                     <img src="/images/icon_chevron_logo.webp" alt="">
                     <div class="text-primary text-4xl font-sans font-bold ">
-                        <h2>Our Mission</h2>
+                        <h2>{{ $t('about_page.our_mission') }}</h2>
                     </div>
                     <div class="text-lg text-secondary">
-                        <p>Firstrade’s mission is to empower its customers with the most advanced technology to make it simpler
-                            and seamless to execute their investment strategies. It's self-directed investing, placing the needs
-                            of our customers first through no-cost trading.</p>
-                        <p class="py-4">At Firstrade, we stand by our core values every day:</p>
-                        <p class="text-primary">Commission-Free Investing and an ongoing Commitment to Excellence.</p>
+                        <p>{{ $t('about_page.firstrades_mission_is_to_empower_its_customers') }}</p>
+                        <p class="py-4">{{ $t('about_page.at_firstrade_we_stand_by_our_core') }}</p>
+                        <p class="text-primary">{{ $t('about_page.commission_free_investing_and_an_ongoing') }}</p>
                     </div>
 
                 </div>
@@ -21,16 +19,16 @@
             <div class="container mx-auto max-w-3xl px-6">
                 <div class="flex justify-between text-[#4d6582]   "> 
                     <button class="border-b-2 border-b-[#4d6582] pb-2 ">
-                        <router-link to="/about">About</router-link>
+                        <router-link to="/about">{{ $t('footer.about') }}</router-link>
                     </button>
                     <button class="border-b-2 border-b-transparent pb-2">
-                        <router-link to="/history">History</router-link>
+                        <router-link to="/history">{{ $t('footer.history') }}</router-link>
                     </button>
                     <button  class="border-b-2 border-b-transparent pb-2">
-                        <router-link to="/corporate-responsibility">Corporate Responsibility</router-link>
+                        <router-link to="/corporate-responsibility">{{ $t('footer.corporate_responsibility') }}</router-link>
                     </button>
                     <button  class="border-b-2 border-b-transparent pb-2">
-                        <router-link to="/press">Press</router-link>
+                        <router-link to="/press">{{ $t('footer.press') }}</router-link>
                     </button>
                 </div>        
             </div>
@@ -39,42 +37,22 @@
             <section id="about" aria-labelledby="details-title">
                         <div class="m-auto  px-8 py-20 lg:px-10 lg:py-20 text-[#4d6582]">
                             <div>
-                                <h2 id="details-title" class="text-center font-bold py-4 text-2xl">Proudly serving our customers since 1985
+                                <h2 id="details-title" class="text-center font-bold py-4 text-2xl">{{ $t('about_page.proudly_serving_our_customers_since') }}
                                 </h2>
-                                <p class="text-left text-md">Firstrade is a leading online brokerage firm offering a full line of investment products
-                                    and tools designed to help investors like you take control of your financial future.
-                                    Since its founding in 1985, Firstrade has been committed to providing high value and
-                                    quality services to help you reach your financial goals.</p>
-                                <p class="text-left text-md py-4">Combining proprietary trading technology, a highly intuitive user interface, outstanding
-                                    customer service and mobile applications, Firstrade offers a comprehensive solution for
-                                    all of your investing needs. Whether you are a new investor or an active trader, we are
-                                    committed to excellence and putting the needs of all our customers first. Firstrade is a
-                                    member of FINRA/SIPC. Discover online investment opportunities with Firstrade Securities
-                                    today.</p>
+                                <p class="text-left text-md">{{ $t('about_page.firstrade_is_a_leading_online_brokerage_firm_offering_a_full_line_of_investment') }}</p>
+                                <p class="text-left text-md py-4">{{ $t('about_page.combining_proprietary_trading_technology') }}</p>
                                 <div class="md:grid md:grid-cols-2 md:gap-4 text-left">
                                     <div>
-                                        <h3 class="mb-4 font-sans text-xl font-semibold">What We Do</h3>
-                                        <p>Firstrade provides online and mobile trading of Stocks/ETFs, Options, Mutual
-                                            Funds, Fixed Income products and more. We offer extended hours trading from
-                                            8am-8pm and stand by our trading tools with a 0.1 second trade execution
-                                            guarantee.</p>
+                                        <h3 class="mb-4 font-sans text-xl font-semibold">{{ $t('about_page.what_we_do') }}</h3>
+                                        <p>{{ $t('about_page.firstrade_provides_online_and_mobile_trading') }}</p>
                                     </div>
                                     <div>
-                                        <h3 class="mb-4 font-sans text-xl font-semibold">Our Commitment</h3>
-                                        <p>Our commitment as an online brokerage firm has always been to offer the best
-                                            service, most resourceful tools and most convenient platform for the lowest
-                                            fees. Our dedication to you- our customer- has helped us grow rapidly while
-                                            consistently providing self-directed investors with fast order executions,
-                                            excellent customer service, exceptional site performance and commission-free
-                                            trading.</p>
+                                        <h3 class="mb-4 font-sans text-xl font-semibold">{{ $t('about_page.our_commitment') }}</h3>
+                                        <p>{{ $t('about_page.our_commitment_as_an_online_brokerage_firm') }}</p>
                                     </div>
                                 <div>
-                                    <h3 class="mb-4 font-sans text-xl font-semibold">Accolades</h3>
-                                    <p>Over the years, major industry publications including Barron's, Forbes, and Smart
-                                        Money have all rated Firstrade as one of the best online brokers. For the fifth
-                                        year in a row, Firstrade was awarded 4.5 stars out of five for the website’s
-                                        ease of use and also awarded "Best in Class" by StockBrokers.com 2019 Online
-                                        Broker Review.</p>
+                                    <h3 class="mb-4 font-sans text-xl font-semibold">{{ $t('about_page.accolades') }}</h3>
+                                    <p>{{ $t('about_page.over_the_years_major_industry_publications') }}</p>
                                 </div>
                                 <div class="mb-4">
                                     <div class="relative mx-auto text-center">
@@ -85,12 +63,11 @@
                         </div>
                         <div class="my-8 border-b-2 border-grayish-blue"></div>
                         <div>
-                            <h2 class="mb-4 text-center font-sans text-base font-bold">MORE INFORMATION</h2>
+                            <h2 class="mb-4 text-center font-sans text-base font-bold">{{ $t('about_page.more_information') }}</h2>
                             <ul
-                                class="m-0 flex list-none flex-col gap-4 text-center md:m-auto md:max-w-md md:flex-row md:justify-between md:gap-0">
-                                <li><a href="/legal/business-continuity">Business Continuity</a></li>
-                                <li><a href="/legal/privacy">Privacy &amp; Security</a></li>
-                                <li><a href="/legal/order-routing">Order Routing Report</a></li>
+                                class="m-0 flex list-none flex-col md:gap-4 text-center md:m-auto md:max-w-md md:flex-row md:justify-center md:gap-0">
+                                <li><a href="/legal/business-continuity">{{ $t('footer.privacy_policy') }}</a></li>
+                                <li><a href="/legal/privacy">{{ $t('footer.business_continuity') }}</a></li>                               
                             </ul>
                         </div>
                     </div>

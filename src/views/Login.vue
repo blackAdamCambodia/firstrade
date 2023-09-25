@@ -1,38 +1,38 @@
 <template>
-    <div id="loginpage">
-        <div class="header">
+    <div id="loginpage" >
+        <div class="header absolute z-10 overflow-hidden top-0 bg-white w-full py-8">
             <div class="content ">
-                <a href="http://www.firstrade.com/content/en-us/welcome/">
+                <a href="/">
                     <div class="header_logo"></div>
                 </a>
-                <div class="homelink"><a href="http://www.firstrade.com/content/en-us/welcome/">Return to Homepage</a></div>
+                <div class="homelink"><a href="/">{{ $t('login_page.return_to_homepage') }}</a></div>
             </div>
         </div>
         <div class="container">
             <div class="loginbox br">
                 <div class="content br text-left">
-                    <form name="loginForm" id="loginForm" action="/cgi-bin/login" method="post" target="_top"
+                    <form name="loginForm" id="loginForm" action="/login" method="post" target="_top"
                         autocomplete="off" class="br">
                         <input type="hidden" name="redirect" value="">
                         <input type="hidden" name="ft_locale" value="en-us">
                         <input type="hidden" name="login.x" value="Log In">
-                        <div class="title">Login to your account</div>
+                        <div class="title text-primary text-lg">{{ $t('login_page.login_to_your_account') }}</div>
                         <div class="logerrormsg br" style="display:none"></div>
                         <br>
                         <div class="loginInput">
-                            <label for="username">User ID</label><br>
+                            <label for="username">{{ $t('login_page.User_ID') }}</label><br>
                             <input type="text" maxlength="40" autocomplete="off" id="username" name="username">
                         </div><br>
                         <div class="passwordInput">
-                            <label for="password">Password</label><br>
+                            <label for="password">{{ $t('login_page.password') }}</label><br>
                             <input type="password" maxlength="40" style="" autocomplete="off" id="password" name="password">
                         </div>
-                        <div id="forgetpass"><a target="_top" href="/sc_scripts/loginsupport/en-us/1/">Need Login Help?</a>
+                        <div id="forgetpass"><a target="_top" href="/sc_scripts/loginsupport/en-us/1/">{{ $t('login_page.need_login_help') }}</a>
                         </div>
                         <br><br>
                         <select name="destination_page" id="destination_page" class="destination_page"
                             onchange="setFTdefaultCookie()">
-                            <option value="home">Select Start Page</option>
+                            <option value="home">{{ $t('login_page.select_start_page') }}</option>
                             <option value="home">Home</option>
                             <option value="acctbalance">Balances</option>
                             <option value="acctpositions">Positions</option>
@@ -42,7 +42,7 @@
                             <option value="accthistory">Account History</option>
                         </select>
                         <input type="submit" id="loginButton" value="Login" class="btn btn-primary"><br>
-                        <div class="openaccount"><a href="/apply/en-us/">Open an Account</a></div>
+                        <div class="openaccount text-center"><a href="/SignUp">{{ $t('login_page.open_an_account') }}</a></div>
                     </form>
                 </div>
                 <div style="clear:both"></div>
@@ -74,18 +74,17 @@
         </div>
         <div class="footer">
             <div class="content py-6">
-                <p><a id="open-modal">Recommended browsers</a></p>
+                <p><a id="open-modal">{{ $t('login_page.recommended_browsers') }}</a></p>
                 <p>Language Services:&nbsp;&nbsp;<a id="traditional"
                         href="/cgi-bin/login?ft_locale=zh-tw">繁體</a>&nbsp;&nbsp;<a id="simplified"
                         href="/cgi-bin/login?ft_locale=zh-cn">简体</a></p>
-                <p>Please review our <a target="_blank" rel="noopener"
-                        href="https://www.firstrade.com/legal/privacy">Privacy Policy</a> and <a target="_blank"
-                        rel="noopener" href="https://www.firstrade.com/legal/terms">Legal Disclaimer</a>.<br>
-                    ©2023 Firstrade Securities Inc. All rights reserved. Member <a target="_blank" rel="noopener"
+                <p>{{ $t('login_page.please_review_our') }} <a target="_blank" rel="noopener"
+                        href="/legal/privacy"> {{ $t('footer.privacy_policy') }}</a> and <a target="_blank"
+                        rel="noopener" href="/legal/terms"> {{ $t('footer.terms_conditions') }}</a>.<br>
+                        {{ $t('login_page.firstrade_securities_inc') }} <a target="_blank" rel="noopener"
                         href="http://www.finra.org">FINRA</a>/<a target="_blank" rel="noopener"
                         href="http://www.sipc.org">SIPC</a>.<br>
-                    System response and access times may vary due to market conditions, system performance, and other
-                    factors.</p>
+                        {{ $t('login_page.system_response_and_access_times') }}</p>
             </div>
         </div>
         <!-- The Modal -->
@@ -116,7 +115,7 @@
 export default {
     data() {
         return {
-            isLogin: true,
+            isLogin: false,
     }
 }
 }

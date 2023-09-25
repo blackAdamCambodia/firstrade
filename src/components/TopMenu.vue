@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div >
         <header class="globals relative isolate z-10 bg-ft-blue">
             <nav class="container px-3 flex items-center justify-between py-3 sm:max-w-none md:max-w-none lg:max-w-7xl lg:py-4 mx-auto"
                 aria-label="Global">
